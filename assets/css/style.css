@@ -1,6 +1,36 @@
+/* Style for Body */
 body {
     background-color: rgb(219, 197, 248);
     color: rgb(8, 8, 8);
     text-align: center;
     font-size: larger;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for numbers divs in the game area */
+.clicky-alphabets--div {
+    max-width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.alphabet-div {
+    min-width: 17%;
+    padding: 10px 5px;
+    margin: 5px;
+}
+
+/* Style for start and reset buttons */
+.button-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px 16%;
+    padding: 10px 5px;
 }
