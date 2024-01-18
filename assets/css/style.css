@@ -12,13 +12,15 @@ body {
 }
 
 /* Styles for numbers divs in the game area */
-.clicky-alphabets--div {
+.clicky-alphabets-div {
     max-width: 660px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     margin: 10px 0px;
+    font-family: "Kalam", "Lato";
+    font-size: xx-large;
 }
 
 .alphabet-div {
@@ -28,28 +30,25 @@ body {
 }
 
 /* Style for start and reset buttons */
-.button-span {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 16%;
-    padding: 10px 5px;
-    justify-content: space-between;
-}
+
 
 .game-button {
-    font-size: x-large;
+    font-size: xx-large;
+    font-family: "Kalam", "Lato";
+    justify-content: space-evenly;
+    
 }
 
 .start-button {
     margin-right: 8%;
     padding: 5px 10px;
-    background-color: rgb(48, 0, 40);
+    background-color: rgb(10, 56, 3);
     color: rgb(252, 251, 248);
 }
 
 .reset-button {
     margin-left: 8%;
     padding: 5px 10px;
-    background-color: rgb(48, 0, 40);
+    background-color: rgb(68, 5, 58);
     color: rgb(252, 251, 248);
 }
