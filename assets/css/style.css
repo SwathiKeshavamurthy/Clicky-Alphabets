@@ -30,7 +30,25 @@ body {
 .button-span {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     margin: 5px 16%;
     padding: 10px 5px;
+    justify-content: space-between;
+}
+
+.game-button {
+    font-size: x-large;
+}
+
+.start-button {
+    margin-right: 8%;
+    padding: 5px 10px;
+    background-color: rgb(48, 0, 40);
+    color: rgb(252, 251, 248);
+}
+
+.reset-button {
+    margin-left: 8%;
+    padding: 5px 10px;
+    background-color: rgb(48, 0, 40);
+    color: rgb(252, 251, 248);
 }
