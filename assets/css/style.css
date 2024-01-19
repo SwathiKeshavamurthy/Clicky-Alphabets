@@ -1,15 +1,23 @@
-/* Style for Body */
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Style for Body */
 body {
     background-color: rgb(219, 197, 248);
     color: rgb(8, 8, 8);
     text-align: center;
-    font-size: larger;
+    font-size: large;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     font-family: "Kalam", "Lato";
 }
+
 
 /* Styles for alphabets divs in the game area */
 .clicky-alphabets-div {
@@ -20,7 +28,7 @@ body {
     flex-direction: row;
     margin: 10px 0px;
     font-family: "Kalam", "Lato";
-    font-size: x-large;
+    font-size: larger;
 }
 
 .alphabet-div {
@@ -52,4 +60,40 @@ body {
     padding: 5px 10px;
     background-color: rgb(68, 5, 58);
     color: rgb(252, 251, 248);
+}
+
+/* Footer */
+footer {
+    padding: 0 1rem 0 1rem;
+}
+
+footer>h3 {
+    font-family: "Kalam", "Lato";
+    letter-spacing: 1px;
+    color: rgb(8, 8, 8);
+}
+
+#footer-group {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 8rem;
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: rgb(8, 8, 8);
+    justify-content: space-evenly;
+}
+
+#disclaimer{
+    font-size: medium;
 }
