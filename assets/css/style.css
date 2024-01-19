@@ -11,7 +11,7 @@ body {
     font-family: "Kalam", "Lato";
 }
 
-/* Styles for numbers divs in the game area */
+/* Styles for alphabets divs in the game area */
 .clicky-alphabets-div {
     max-width: 660px;
     display: flex;
@@ -28,6 +28,7 @@ body {
     padding: 10px 5px;
     margin: 5px;
 }
+
 
 /* Style for start and reset buttons */
 
