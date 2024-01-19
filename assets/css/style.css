@@ -13,19 +13,19 @@ body {
 
 /* Styles for alphabets divs in the game area */
 .clicky-alphabets-div {
-    max-width: 660px;
+    max-width: 770px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     margin: 10px 0px;
     font-family: "Kalam", "Lato";
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .alphabet-div {
-    min-width: 17%;
-    padding: 10px 5px;
+    min-width: 13%;
+    padding: 5px 2px;
     margin: 5px;
 }
 
