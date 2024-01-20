@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function handleClick(event) {
         if (event.target.getAttribute('data-type') === 'start') {
             secondsInterval = setInterval(setTimer, 1000); //Start timer
+            timerRunning = true; //Start game
         } else if (event.target.getAttribute('data-type') === 'reset') {
             clearInterval(secondsInterval);
             second = 0;
@@ -30,16 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     //Add eventlisteners to the divs with alphabets inside, that are used to play game
-    function clickableDivs() {
     let divs = document.getElementsByClassName('alphabet-div');
 
     for (let div of divs) {
-        div.addEventListener('click', function () {
-            alert('You clicked a alphabet-div');
-            let divAlphabet = parseInt(div.textContent); //Gets the alphabet inside the div clicked
-            alert(`You clicked ${divAlphabet}`);
-        });
-    }
+        div.addEventListener('click', 
 }
 
 /** Timer function, starts when Start button is pressed.
@@ -50,6 +45,7 @@ function setTimer() {
     timer.innerHTML = `Timer: ${second}`;
     second++;
 }
+addAlphabetToDiv();
 
 
 //Creates an array and fills it randomly with Alphabets A-Z
