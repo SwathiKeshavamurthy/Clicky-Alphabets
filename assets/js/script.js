@@ -3,6 +3,9 @@
  */
 document.addEventListener('DOMContentLoaded', function () {
    const buttons = document.getElementsByTagName('button');
+   let divs = document.getElementsByClassName('alphabet-div');
+   let secondsInterval; //Keep track of timer count
+   let second = 0; //Set displaying time on page
 
     //Add eventlisteners to Start and Reset buttons.
     for (let button of buttons) {
@@ -11,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //Functions to start and reset Buttons
     function handleClick(event) {
         if (event.target.getAttribute('data-type') === 'start') {
-            alert('You hit the Start button');
+            secondsInterval = setInterval(setTimer, 1000); //Start timer
         } else if (event.target.getAttribute('data-type') === 'reset') {
             alert('You hit the reset button');
         } else {
@@ -32,6 +35,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 }
+
+/** Timer function, starts when Start button is pressed.
+ */
+
+function setTimer() {
+    let timer = document.getElementById('timer');
+    timer.innerHTML = `Timer: ${second}`;
+    second++;
+}
+
 
 //Creates an array and fills it randomly with Alphabets A-Z
 function randomArray() {
