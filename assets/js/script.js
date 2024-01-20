@@ -19,3 +19,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     });
+
+//Creates an array and fills it randomly with Alphabets A-Z
+function randomArray() {
+    const array=[]; //Create an empty array
+
+    while (array.length < 26) {
+        let alphabet = Math.floor(Math.random() * 26) + 1; //Random alphabets A-Z
+
+        if (array.includes(alphabet)) {
+            continue; //If alpahbet already exists in array, skip this iteration
+        } else {
+            array.push(alphabet); //Push unique alphabet into array
+        }
+    }
+    return array;
+}
