@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event.target.getAttribute('data-type') === 'start') {
             secondsInterval = setInterval(setTimer, 1000); //Start timer
             timerRunning = true; //Start game
+            document.getElementById('start-button').disabled = true;
         } else if (event.target.getAttribute('data-type') === 'reset') {
             clearInterval(secondsInterval);
             second = 0;
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             timer.innerHTML = `Timer: ${second}`; //Reset timer in HTML
             timerRunning = false; //Stop game
             firstNumber = 1;
+            document.getElementById('start-button').disabled = false;
 
         } else {
             alert('No game is running, please press "Start"');
