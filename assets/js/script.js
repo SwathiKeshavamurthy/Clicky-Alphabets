@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
             firstNumber = 1;
             document.getElementById('start-button').disabled = false;
 
+            resetDivs();
+            addNumToDiv();
+
         } else {
             alert('No game is running, please press "Start"');
         }
