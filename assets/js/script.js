@@ -52,7 +52,16 @@ document.addEventListener('DOMContentLoaded', function () {
             if (divAlphabet === firstAlphabet && firstAlphabet < 26) {
                 this.style.backgroundColor = 'green';//If Alphabet is correct, color background green
                 firstAlphabet++;
-        } else if (divAlphabet !== firstAlphabet) {
+        } else if (divAlphabet !== firstAlphabet) { 
+
+            /*setTimeout function
+            Waits 0.1 sec before displaying alert message.
+            Had to use this so div would color red before alert displays.*/
+            setTimeout(function () {
+                alert('Game Over! Press Reset and then Start, to start a new game.');
+            }, 100);
+
+            
         } else {
             }
 
