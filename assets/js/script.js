@@ -38,27 +38,25 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('No game is running, please press "Start"');
         }
     }
-    });
+
 
     //Add eventlisteners to the divs with alphabets inside, that are used to play game
-    let divs = document.getElementsByClassName('alphabet-div');
-
     for (let div of divs) {
         div.addEventListener('click', handleDivClick);
 }
 
 
-/** Main game function, Click in correct order, and color if clicked correct, green.
+/** Main game function, Clicked Alphabets in correct order, color green.
     If clicked in wrong order, red, and game over.
 */
     function handleDivClick() {
         if (timerRunning === true) {
             let divAlphabet = parseInt(this.textContent);//Get Alphabet from clicked div
-            if (divAlphabet === firstAlphabet && firstAlphabet < 26) {
+            if (divAlphabet === firstAlphabet && firstAlphabet < Z) {
                 this.style.backgroundColor = 'green';//If Alphabet is correct, color background green
                 firstAlphabet++;
-        } else if (divAlphabet !== firstAlphabet) { 
 
+        } else if (divAlphabet !== firstAlphabet) { 
             /*setTimeout function
             Waits 0.1 sec before displaying alert message.
             Had to use this so div would color red before alert displays.*/
@@ -71,10 +69,9 @@ document.addEventListener('DOMContentLoaded', function () {
             clearInterval(secondsInterval);//Stop timer
             
         } else { 
-
             //Game complete functionality
 
-            if (firstAlphabet=== 26) {
+            if (firstAlphabet=== Z) {
                 setTimeout(function () {
                     alert('Congratulations, you completed the game!');
                 }, 100);
@@ -98,7 +95,7 @@ function setTimer() {
     second++;
 }
 addAlphabetToDiv();
-
+});
 
 
 //Creates an array and fills it randomly with Alphabets A-Z
@@ -140,6 +137,6 @@ function resetDivs() {
     let divs = document.getElementsByClassName('alphabet-div');
 
     for (let div of divs) {
-        div.style.backgroundColor = '';
+        div.style.backgroundColor = 'rgb(219, 197, 248);';
     }
 }
