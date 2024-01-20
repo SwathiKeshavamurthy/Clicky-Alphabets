@@ -67,3 +67,18 @@ function randomArray() {
     }
     return array;
 }
+
+
+/** 
+ * Uses the function randomArray to get random numbers.
+ * Then inhabit alphabet-div in html with those numbers.
+ * Used on DOM load, and when reset button is used.
+*/
+function addAlphabetToDiv() {
+    let divs = document.getElementsByClassName('alphabet-div');
+    let alphabets = randomArray(); //Function that generats array with random, unique Alphabets A-Z
+
+    for (let i = 0; i < divs.length; i++) {
+        divs[i].textContent = alphabets[i]; //Add the alphabets from randomArray to each alphabet-div in the html
+    }
+}
