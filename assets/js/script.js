@@ -20,6 +20,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     });
 
+    //Add eventlisteners to the divs with alphabets inside, that are used to play game
+    function clickableDivs() {
+    let divs = document.getElementsByClassName('alphabet-div');
+
+    for (let div of divs) {
+        div.addEventListener('click', function () {
+            alert('You clicked a alphabet-div');
+            let divAlphabet = parseInt(div.textContent); //Gets the alphabet inside the div clicked
+            alert(`You clicked ${divAlphabet}`);
+        });
+    }
+}
+
 //Creates an array and fills it randomly with Alphabets A-Z
 function randomArray() {
     const array=[]; //Create an empty array
