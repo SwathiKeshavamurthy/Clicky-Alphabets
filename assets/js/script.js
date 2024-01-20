@@ -34,9 +34,17 @@ document.addEventListener('DOMContentLoaded', function () {
     let divs = document.getElementsByClassName('alphabet-div');
 
     for (let div of divs) {
-        div.addEventListener('click', 
+        div.addEventListener('click', handleDivClick);
 }
 
+
+/** Main game function, Click in correct order, and color if clicked correct, green.
+    If clicked in wrong order, red, and game over.
+*/
+    function handleDivClick() {
+
+
+    }
 /** Timer function, starts when Start button is pressed.
  */
 
