@@ -16,7 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event.target.getAttribute('data-type') === 'start') {
             secondsInterval = setInterval(setTimer, 1000); //Start timer
         } else if (event.target.getAttribute('data-type') === 'reset') {
-            alert('You hit the reset button');
+            clearInterval(secondsInterval);
+            second = 0;
+            let timer = document.getElementById('timer');
+            timer.innerHTML = `Timer: ${second}`; //Reset timer in HTML
+            timerRunning = false; //Stop game
+            firstNumber = 1;
+
         } else {
             alert('No game is running, please press "Start"');
         }
