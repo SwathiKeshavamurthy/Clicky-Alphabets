@@ -86,3 +86,15 @@ function addAlphabetToDiv() {
         divs[i].textContent = alphabets[i]; //Add the alphabets from randomArray to each alphabet-div in the html
     }
 }
+
+
+/**
+ * To set divs back to their original color when game is reset
+ */
+function resetDivs() {
+    let divs = document.getElementsByClassName('alphabet-div');
+
+    for (let div of divs) {
+        div.style.backgroundColor = '';
+    }
+}
