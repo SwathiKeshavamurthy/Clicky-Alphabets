@@ -1,16 +1,21 @@
-/**
- * Add event listeners to Start and Reset buttons on DOM load
- */
+/* Add event listeners to Start and Reset buttons on DOM load */
+
 document.addEventListener('DOMContentLoaded', function () {
    const buttons = document.getElementsByTagName('button');
    let divs = document.getElementsByClassName('alphabet-div');
    let secondsInterval; //Keep track of timer count
    let second = 0; //Set displaying time on page
+   let timerRunning = false; //Game stopped
+   let firstAlphabet = A; //Keep count of what alphabet is clicked
+
+
 
     //Add eventlisteners to Start and Reset buttons.
     for (let button of buttons) {
         button.addEventListener('click', handleClick);
     }
+
+
     //Functions to start and reset Buttons
     function handleClick(event) {
         if (event.target.getAttribute('data-type') === 'start') {
@@ -42,6 +47,14 @@ document.addEventListener('DOMContentLoaded', function () {
     If clicked in wrong order, red, and game over.
 */
     function handleDivClick() {
+        if (timerRunning === true) {
+            let divAlphabet = parseInt(this.textContent);//Get Alphabet from clicked div
+            if (divAlphabet === firstAlphabet && firstAlphabet < 26) {
+                this.style.backgroundColor = 'green';//If Alphabet is correct, color background green
+                firstAlphabet++;
+        } else if (divAlphabet !== firstAlphabet) {
+        } else {
+            }
 
 
     }
