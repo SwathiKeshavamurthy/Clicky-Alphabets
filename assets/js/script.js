@@ -57,16 +57,33 @@ document.addEventListener('DOMContentLoaded', function () {
             /*setTimeout function
             Waits 0.1 sec before displaying alert message.
             Had to use this so div would color red before alert displays.*/
+
             setTimeout(function () {
                 alert('Game Over! Press Reset and then Start, to start a new game.');
             }, 100);
-
+            this.style.backgroundColor = 'red';
+            timerRunning = false;
+            clearInterval(secondsInterval);//Stop timer
             
-        } else {
+        } else { 
+
+            //Game complete functionality
+
+            if (firstAlphabet=== 26) {
+                setTimeout(function () {
+                    alert('Congratulations, you completed the game!');
+                }, 100);
+                this.style.backgroundColor = 'green';
+                timerRunning = false;
+                clearInterval(secondsInterval);
+                bestTime();
             }
+        }
 
-
+    } else {
+        alert('No game is currently running, please press Start! If game is completed, or game over, press Reset and then Start.');
     }
+}
 /** Timer function, starts when Start button is pressed.
  */
 
@@ -76,6 +93,7 @@ function setTimer() {
     second++;
 }
 addAlphabetToDiv();
+
 
 
 //Creates an array and fills it randomly with Alphabets A-Z
