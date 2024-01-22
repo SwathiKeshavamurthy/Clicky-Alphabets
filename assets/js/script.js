@@ -126,4 +126,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         return array;
       }
+      
+      function getBestTime() {
+        return localStorage.getItem('bestTime') || null;
+      }
+  
+      function setBestTime(time) {
+        localStorage.setItem('bestTime', time);
+      }
 });
