@@ -1,13 +1,14 @@
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
-    margin: 8px 0 2px 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 /* General Style for Body */
 body {
     background-color: rgb(219, 197, 248);
+    margin: 8px 0 2px 0;
     color: rgb(8, 8, 8);
     text-align: center;
     font-size: large;
@@ -41,27 +42,52 @@ body {
 
 /* Style for start and reset buttons */
 
+#start-button {
+    margin-right: 8%;
+    padding: 5px 10px;
+    background-color: rgb(10, 56, 3);
+    color: rgb(252, 251, 248);
+    cursor: pointer;
+    font-size: x-large;
+    font-family: "Kalam", "Lato";
+    justify-content: space-evenly;
+}
 
-.game-button {
+#reset-button {
+    margin-left: 8%;
+    padding: 5px 10px;
+    background-color: rgb(68, 5, 58);
+    color: rgb(252, 251, 248);
+    cursor: pointer;
+    font-size: x-large;
+    font-family: "Kalam", "Lato";
+    justify-content: space-evenly;
+}
+
+/*Images*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  /*Timer and Your Best Time*/
+
+  #time{
     font-size: xx-large;
     font-family: "Kalam", "Lato";
     justify-content: space-evenly;
     
 }
 
-.start-button {
-    margin-right: 8%;
-    padding: 5px 10px;
-    background-color: rgb(10, 56, 3);
-    color: rgb(252, 251, 248);
-}
+  #timer, #bestTime {
+    margin-top: 10px;
+  }
 
-.reset-button {
-    margin-left: 8%;
-    padding: 5px 10px;
-    background-color: rgb(68, 5, 58);
-    color: rgb(252, 251, 248);
-}
 
 /* Footer */
 footer {
