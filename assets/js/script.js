@@ -34,4 +34,28 @@ document.addEventListener('DOMContentLoaded', function () {
         timer = setInterval(updateTimer, 1000);
       }
 
+      function resetGame() {
+        // Reset the game state
+        currentImageIndex = 0;
+  
+        // Set timer to 0
+        seconds = 0;
+  
+        // Clear the timer
+        clearInterval(timer);
+  
+        // Disable the reset button
+        resetButton.disabled = true;
+  
+        // Remove existing images
+        imageContainer.innerHTML = '';
+  
+        // Update the timer display
+        updateTimer();
+  
+        // Display "Best Time: 0 seconds"
+        bestTimeElement.textContent = 'Best Time: 0 seconds';
+      }
+  
+
 });
