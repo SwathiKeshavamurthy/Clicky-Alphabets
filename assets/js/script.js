@@ -47,11 +47,9 @@
         // Remove existing images
         imageContainer.innerHTML = '';
   
-        // Update the timer display
-        updateTimer();
-  
-        // Display "Best Time: 0 seconds"
-        bestTimeElement.textContent = 'Best Time: 0 seconds';
+        // Update the timer display immediately
+        timerElement.textContent = `Timer: 0 second(s)`;
+        
       }
 
       function displayImages() {
