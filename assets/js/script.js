@@ -112,4 +112,10 @@ document.addEventListener('DOMContentLoaded', function () {
         timerElement.textContent = `Timer: ${seconds} second(s)`;
       }
 
+
+      function generateAlphabetImages() {
+        const alphabetImages = Array.from({ length: 26 }, (_, i) => `assets/images/alphabets-webp/${String.fromCharCode(97 + i)}.webp`);
+        return shuffleArray(alphabetImages);
+      }
+  
 });
