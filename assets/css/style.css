@@ -77,15 +77,11 @@ img {
 
   /*Timer and Your Best Time*/
 
-  #time{
-    font-size: xx-large;
-    font-family: "Kalam", "Lato";
-    justify-content: space-evenly;
-    
-}
-
   #timer, #bestTime {
     margin-top: 10px;
+    font-size: x-large;
+    font-family: "Kalam", "Lato";
+    justify-content: space-evenly;
   }
 
 
