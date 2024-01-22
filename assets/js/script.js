@@ -67,6 +67,46 @@ document.addEventListener('DOMContentLoaded', function () {
           imageContainer.appendChild(imgElement);
         }
       }
+
+      function handleImageClick(clickedImage) {
+        // Check if the clicked image is in the correct order
+        const expectedLetter = String.fromCharCode(97 + currentImageIndex);
+        const clickedLetter = clickedImage.src.charAt(clickedImage.src.lastIndexOf('/') + 1).toLowerCase();
+  
+        if (clickedLetter === expectedLetter) {
+          // Mark the image as correct
+          clickedImage.classList.add('correct');
+  
+          // Increment the index for the next image
+          currentImageIndex++;
+  
+          // Check if all images have been clicked in order
+          if (currentImageIndex === shuffledImages.length) {
+            clearInterval(timer);
+  
+            // Check and update the best time
+            if (seconds < bestTime || bestTime === null) {
+              bestTime = seconds;
+              setBestTime(bestTime);
+              bestTimeElement.textContent = `Best Time: ${bestTime} seconds`;
+              alert(`Congratulations! You completed the game in ${seconds} seconds. New best time!`);
+            } else {
+              alert(`Congratulations! You completed the game in ${seconds} seconds.`);
+            }
+  
+            // Reset the game
+            resetGame();
+          }
+        } else {
+          // Mark the image as incorrect
+          clickedImage.classList.add('incorrect');
+          clearInterval(timer);
+  
+          // Alert game over
+          alert('Game Over! You clicked the images out of order.');
+        }
+      }
+  
   
 
 });
