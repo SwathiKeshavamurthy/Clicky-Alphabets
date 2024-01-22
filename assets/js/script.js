@@ -49,7 +49,7 @@
   
         // Update the timer display immediately
         timerElement.textContent = `Timer: 0 second(s)`;
-        
+
       }
 
       function displayImages() {
@@ -99,7 +99,16 @@
   
           // Alert game over
           alert('Game Over! You clicked the images out of order.');
+          
+          // Disable further clicks on images if game over
+          disableImageClicks();
         }
+      }
+
+      function disableImageClicks() {
+        // Disable click event on all images if game over
+        const images = document.querySelectorAll('img');
+        images.forEach(img => img.onclick = null);
       }
   
       function updateTimer() {
