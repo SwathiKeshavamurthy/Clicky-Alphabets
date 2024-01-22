@@ -56,6 +56,17 @@ document.addEventListener('DOMContentLoaded', function () {
         // Display "Best Time: 0 seconds"
         bestTimeElement.textContent = 'Best Time: 0 seconds';
       }
+
+      function displayImages() {
+        // Display the shuffled images
+        for (const imageUrl of shuffledImages) {
+          const imgElement = document.createElement('img');
+          imgElement.src = imageUrl;
+          imgElement.alt = 'Image';
+          imgElement.onclick = () => handleImageClick(imgElement);
+          imageContainer.appendChild(imgElement);
+        }
+      }
   
 
 });
