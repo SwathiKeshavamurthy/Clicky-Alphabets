@@ -107,6 +107,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
   
-  
+      function updateTimer() {
+        seconds++;
+        timerElement.textContent = `Timer: ${seconds} second(s)`;
+      }
 
 });
