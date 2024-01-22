@@ -14,5 +14,24 @@ document.addEventListener('DOMContentLoaded', function () {
     let seconds = 0; //Display 0seconds on screen
     let bestTime = getBestTime(); //Stored in cached memeory 
 
+    function startGame() {
+        // Reset the game state
+        resetGame();
+  
+        // Enable the reset button
+        resetButton.disabled = false;
+  
+        // Set timer to 0
+        seconds = 0;
+  
+        // Shuffle the images
+        shuffledImages = generateAlphabetImages();
+  
+        // Display the shuffled images
+        displayImages();
+  
+        // Start the timer
+        timer = setInterval(updateTimer, 1000);
+      }
 
-     
+});
