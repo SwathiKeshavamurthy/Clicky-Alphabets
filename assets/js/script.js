@@ -80,6 +80,8 @@
             clearInterval(timer);
   
             // Check and update the best time
+            console.log('bestTime', bestTime);
+            console.log('seconds',seconds);
             if (seconds < bestTime || bestTime === null) {
               bestTime = seconds;
               setBestTime(bestTime);
@@ -98,7 +100,7 @@
           clearInterval(timer);
   
           // Alert game over
-          alert('Game Over! You clicked the images out of order.');
+          alert('Game Over! You clicked the images out of order. To start again click Reset Game');
           
           // Disable further clicks on images if game over
           disableImageClicks();
@@ -118,6 +120,8 @@
 
 
       function generateAlphabetImages() {
+        // (https://forum.freecodecamp.org/t/alphabet-generation-in-js-are-there-any-constants/532843)
+        //(https://stackoverflow.com/questions/12376870/create-an-array-of-characters-from-specified-range)
         const alphabetImages = Array.from({ length: 26 }, (_, i) => `assets/images/alphabets-webp/${String.fromCharCode(97 + i)}.webp`);
         return shuffleArray(alphabetImages);
       }

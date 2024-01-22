@@ -57,6 +57,7 @@ img {
     font-family: "Kalam", "Lato";
     justify-content: space-evenly;
   }
+  
   .correct {
     background-color: #5cb85c; /* Green */
   }
@@ -67,7 +68,13 @@ img {
 
 /* Footer */
 footer {
-    padding: 0 1rem 0 1rem;
+    padding: 20px 0;;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+     
 }
 
 footer>h3 {
@@ -99,4 +106,11 @@ footer>h3 {
 
 #disclaimer{
     font-size: medium;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 1024px) {
+    footer {
+        position: static; /* Set to static for small screens to be at the bottom of the content */
+    }
 }
