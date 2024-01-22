@@ -19,27 +19,6 @@ body {
     font-family: "Kalam", "Lato";
 }
 
-
-/* Styles for alphabets divs in the game area */
-.clicky-alphabets-div {
-    max-width: 770px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    margin: 10px 0px;
-    font-family: "Kalam", "Lato";
-    font-size: larger;
-}
-
-.alphabet-div {
-    min-width: 13%;
-    padding: 5px 2px;
-    margin: 5px;
-    cursor: pointer;
-}
-
-
 /* Style for start and reset buttons */
 
 #startButton {
@@ -67,7 +46,7 @@ body {
 /*Images*/
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border: 1px solid #ddd;
     padding: 5px;

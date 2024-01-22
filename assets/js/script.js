@@ -1,6 +1,3 @@
-/* Add event listeners to Start and Reset buttons on DOM load */
-
-document.addEventListener('DOMContentLoaded', function () {
     const imageContainer = document.getElementById('imageContainer'); //Stores all 26 images
     const startButton = document.getElementById('startButton'); // Game starts when clicked
     const resetButton = document.getElementById('resetButton'); // Game Resets when clicked
@@ -126,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         return array;
       }
-      
+
       function getBestTime() {
         return localStorage.getItem('bestTime') || null;
       }
@@ -134,4 +131,3 @@ document.addEventListener('DOMContentLoaded', function () {
       function setBestTime(time) {
         localStorage.setItem('bestTime', time);
       }
-});
