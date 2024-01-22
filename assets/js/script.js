@@ -1,13 +1,13 @@
 /* Add event listeners to Start and Reset buttons on DOM load */
 
 document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.getElementsByTagName('button');
-    let divs = document.getElementsByClassName('alphabet-div');
-    let secondsInterval; //Keep track of timer count
-    let second = 0; //Set displaying time on page
-    let timerRunning = false; //Game stopped
-    let firstNumber = 1; //Keep count of what alphabet is clicked
- 
+    const imageContainer = document.getElementById('imageContainer');
+    const startButton = document.getElementById('startButton'); // Game start when clicked
+    const resetButton = document.getElementById('resetButton'); // Game Reset when clicked
+    const timerElement = document.getElementById('timer'); // Display timer
+    const bestTimeElement = document.getElementById('bestTime'); //Display best time
+
+
      //Add eventlisteners to Start and Reset buttons.
      for (let button of buttons) {
          button.addEventListener('click', handleClick);
