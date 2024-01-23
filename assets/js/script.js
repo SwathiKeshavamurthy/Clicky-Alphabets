@@ -11,7 +11,15 @@
     let seconds = 0; //Display 0seconds on screen
     let bestTime = getBestTime(); //Stored in cached memeory 
 
+
+
     function startGame() {
+        // Check if the game is already in progress
+        if (currentImageIndex > 0) {
+        alert('Game Over! You clicked the images out of order. To start again, click Reset Game.');
+        return;
+        }
+
         // Reset the game state
         resetGame();
   
@@ -78,34 +86,17 @@
           // Check if all images have been clicked in order
           if (currentImageIndex === shuffledImages.length) {
             clearInterval(timer);
-  
-            // Check and update the best time
-            console.log('bestTime', bestTime);
-            console.log('seconds',seconds);
-            if (seconds < bestTime || bestTime === null) {
-              bestTime = seconds;
-              setBestTime(bestTime);
-              bestTimeElement.textContent = `Best Time: ${bestTime} seconds`;
-              alert(`Congratulations! You completed the game in ${seconds} seconds. New best time!`);
-            } else {
-              alert(`Congratulations! You completed the game in ${seconds} seconds.`);
-            }
-  
-            // Reset the game
+            updateBestTime();
             resetGame();
-          }
-        } else {
-          // Mark the image as incorrect
-          clickedImage.classList.add('incorrect');
-          clearInterval(timer);
-  
-          // Alert game over
-          alert('Game Over! You clicked the images out of order. To start again click Reset Game');
-          
-          // Disable further clicks on images if game over
-          disableImageClicks();
         }
+  
+      } else {
+        clickedImage.classList.add('incorrect');
+        clearInterval(timer);
+        alert('Game Over! You clicked the images out of order. To start again, click Reset Game.');
+        disableImageClicks();
       }
+    }
 
       function disableImageClicks() {
         // Disable click event on all images if game over
@@ -118,6 +109,20 @@
         timerElement.textContent = `Timer: ${seconds} second(s)`;
       }
 
+      function updateBestTime() {
+        let timeText = timerElement.textContent;
+        let newTime = parseInt(timeText.match(/\d+/)[0]);
+  
+        let bestTimeText = bestTimeElement.textContent;
+        let bestTimeValue = parseInt(bestTimeText.match(/\d+/)[0]);
+  
+        if (newTime < bestTimeValue || bestTimeValue === 0) {
+          bestTimeElement.textContent = `Your best time: ${newTime} seconds`;
+          alert(`Congratulations! You completed the game in ${newTime} seconds. New best time!`);
+        } else {
+          alert(`Congratulations! You completed the game in ${newTime} seconds.`);
+        }
+      }
 
       function generateAlphabetImages() {
         // (https://forum.freecodecamp.org/t/alphabet-generation-in-js-are-there-any-constants/532843)
@@ -133,12 +138,4 @@
           [array[i], array[j]] = [array[j], array[i]];
         }
         return array;
-      }
-
-      function getBestTime() {
-        return localStorage.getItem('bestTime') || null;
-      }
-  
-      function setBestTime(time) {
-        localStorage.setItem('bestTime', time);
       }
