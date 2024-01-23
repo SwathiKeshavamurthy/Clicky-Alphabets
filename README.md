@@ -1,6 +1,4 @@
-![ClickyAlphabets logo]()
-
-Welcome
+<h2>Welcome</h2>
 
 # <h1 align="center">ClickyAlphabets</h1>
 

@@ -7,10 +7,11 @@
 
 /* General Style for Body */
 body {
-    background-color: rgb(219, 197, 248);
+    background-color: rgb(246, 243, 250);
     color: rgb(8, 8, 8);
     text-align: center;
     font-family: "Kalam", "Lato";
+    top:10px;
 }
 
 /* Style for start and reset buttons */
@@ -29,7 +30,7 @@ body {
 #resetButton {
     margin-left: 8%;
     padding: 5px 10px;
-    background-color: rgb(63, 7, 7);
+    background-color: rgb(102, 4, 4);
     color: rgb(252, 251, 248);
     cursor: pointer;
     font-size: x-large;
@@ -109,7 +110,7 @@ footer>h3 {
 }
 
 /* Media query for small screens */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1450px) {
     footer {
         position: static; /* Set to static for small screens to be at the bottom of the content */
     }
