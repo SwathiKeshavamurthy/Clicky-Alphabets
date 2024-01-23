@@ -115,7 +115,8 @@
   
         let bestTimeText = bestTimeElement.textContent;
         let bestTimeValue = parseInt(bestTimeText.match(/\d+/)[0]);
-  
+        
+        // https://stackoverflow.com/questions/4659492/using-javascripts-parseint-at-end-of-string
         if (newTime < bestTimeValue || bestTimeValue === 0) {
           bestTimeElement.textContent = `Your best time: ${newTime} seconds`;
           alert(`Congratulations! You completed the game in ${newTime} seconds. New best time!`);
