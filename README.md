@@ -21,7 +21,14 @@ view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky
       - [The user's goals](#the-users-goals)
     - [Website Owner and User Stories](#website-owner-and-user-stories)
       - [The owner's stories](#the-owners-stories)
-      - [The user's stories](#the-users-stories)     
+      - [The user's stories](#the-users-stories)   
+- [Design of the website](#design-of-the-website)
+  - [Wireframes](#wireframes)
+  - [Fonts](#fonts)
+  - [Color Scheme and Colors](#color-scheme-and-colors)
+  - [Images](#images)
+  - [Icons](#icons)
+  - [Text](#text)  
 
 # User Goals and Stories (UX)
 
@@ -53,7 +60,43 @@ view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky
 - It must be quick and simple for users to pick up and play wherever they are.
 - They are certain to return for more if the game allows them to compete against one another.
 
+# Design of the website
 
+To help users find what they're looking for quickly and precisely without having to scroll through a ton of content, the website is divided into four distinct pages.
 
+Information about the products and the uses are the site's top priorities. Additionally, through links with clear labels, the user can access the products and enquire page.
 
+Along with this a Thank you page will open after submitting in the enquire form.
 
+Users can enquire about the products and get installed  using the form on the enquire now page.
+
+The company's motto is to "increase Electric Vehicles (EV) chargers accessibility to all at very cheap and quality product".
+The layout is kept uncomplicated and tidy and has been used minimalist colour scheme and design.
+
+# Design of the website
+
+To help users the website and game has been designed userfriendly.
+
+## Wireframes
+
+Here are the first wireframes from the design stage. Every design element was put into practice with the help of [Balsamiq Wireframes](https://balsamiq.com/wireframes/)
+
+![laptop-index](assets/documentation/wireframes/window-wireframe.JPG) ![tab-index](assets/documentation/wireframes/tablet-wireframe.JPG) ![smartphone-index](assets/documentation/wireframes/smartphone-wireframes.JPG)
+
+## Fonts
+
+[Google Fonts](https://fonts.google.com/) were used to import the fonts. Fonts chosen were "Kalam" and "Lato". "sans serif" was chosen as the backup font.
+
+## Color Scheme and Colors
+
+Color black, and white was chosen for the font color as it attracts the users eyes.
+
+The dark green and maroon color for Start Game and Reset Game buttons. Red and Green for correct and incorrect click on images.
+
+## Images
+
+Images were downloaded from Pexels and Pinterest and resized for the purpose of this website. The owners are credited in the Credits section.
+
+## Icons
+
+Icons were taken from Fontawesome website [Fontawesome](https://fontawesome.com/) and resized using [Favicon.io](https://favicon.io/).
