@@ -12,6 +12,8 @@ body {
     text-align: center;
     font-family: "Kalam", "Lato";
     top:10px;
+    background-image: url('/assets/images/hero1.webp');
+    
 }
 
 /* Style for start and reset buttons */
