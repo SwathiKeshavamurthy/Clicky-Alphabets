@@ -7,7 +7,7 @@
 
 /* General Style for Body */
 body {
-    background-color: rgb(126, 122, 133);
+    background-color: rgb(201, 195, 211);
     color: rgb(8, 8, 8);
     text-align: center;
     font-family: "Kalam", "Lato", "sans serif";
@@ -34,7 +34,7 @@ body {
     color: rgb(252, 251, 248);
     cursor: pointer;
     font-size: x-large;
-    font-family: "Kalam", "Lato" "sans serif";
+    font-family: "Kalam", "Lato", "sans serif";
     justify-content: space-evenly;
 }
 

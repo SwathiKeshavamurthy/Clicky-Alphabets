@@ -29,6 +29,17 @@ view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky
   - [Images](#images)
   - [Icons](#icons)
   - [Text](#text)  
+- [Features](#features)
+  - [Existing Features](#existing-features)
+    - Title of the Game
+    - Game description
+    - Start button
+    - Reset button
+    - Cursor
+    - Alphabets
+    - Timer
+    - Best Time  
+  - [Future Features](#future-features)
 
 # User Goals and Stories (UX)
 
@@ -100,3 +111,20 @@ Images were downloaded from Pexels and Pinterest and resized for the purpose of 
 ## Icons
 
 Icons were taken from Fontawesome website [Fontawesome](https://fontawesome.com/) and resized using [Favicon.io](https://favicon.io/).
+
+# Features
+
+## Existing Features
+
+### Title of the Game
+
+
+
+### Game Description
+
+A synopsis of how the game is played.
+
+Without being overbearing with information, this will help new players quickly grasp how the game is played.
+
+
+
