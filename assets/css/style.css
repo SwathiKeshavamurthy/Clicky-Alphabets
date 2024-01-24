@@ -25,6 +25,12 @@ body {
     font-size: x-large;
     font-family: "Kalam", "Lato", "sans serif";
     justify-content: space-evenly;
+    /* Hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition over 0.3 seconds */
+}
+
+#startButton:hover {
+    background-color: rgb(0, 128, 0); /* Change the background color on hover */
 }
 
 #resetButton {
@@ -36,6 +42,12 @@ body {
     font-size: x-large;
     font-family: "Kalam", "Lato", "sans serif";
     justify-content: space-evenly;
+    /* Hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition over 0.3 seconds */
+}
+
+#resetButton:hover {
+    background-color: rgb(205, 0, 0); /* Change the background color on hover */
 }
 
 /*Images*/

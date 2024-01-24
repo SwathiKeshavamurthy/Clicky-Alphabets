@@ -31,14 +31,14 @@ view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky
   - [Text](#text)  
 - [Features](#features)
   - [Existing Features](#existing-features)
-    - Title of the Game
-    - Game description
-    - Start button
-    - Reset button
-    - Cursor
-    - Alphabets
-    - Timer
-    - Best Time  
+    - [Heading of the Game](#heading-of-the-game)
+    - [Game description](#game-description)
+    - [Start Game]()
+    - [Reset Game]()
+    - [Cursor]()
+    - [Alphabets]()
+    - [Timer]()
+    - [Best Time]()  
   - [Future Features](#future-features)
 
 # User Goals and Stories (UX)
@@ -116,15 +116,24 @@ Icons were taken from Fontawesome website [Fontawesome](https://fontawesome.com/
 
 ## Existing Features
 
-### Title of the Game
+### Heading of the Game
 
+![title](assets/documentation/readme-images/titleofthegame.JPG)
 
+You can tell exactly what the game is about from the page heading.
 
 ### Game Description
 
-A synopsis of how the game is played.
+![description](assets/documentation/readme-images/description.JPG)
 
+A synopsis of how the game is played.
 Without being overbearing with information, this will help new players quickly grasp how the game is played.
+
+### Start Game
+
+![startbutton](assets/documentation/readme-images/startbutton.JPG)
+
+
 
 
 
