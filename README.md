@@ -42,6 +42,11 @@ view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky
     - [Your Best Time](#your-best-time)  
     - [Footer](#footer)
   - [Future Features](#future-features)
+  - [Deployment](#deployment)
+  - [Languages](#languages)
+  - [Technologies](#technologies)
+  - [Testing](#testing)
+    - [Validation](#validation)
 
 # User Goals and Stories (UX)
 
@@ -120,7 +125,6 @@ Icons were taken from Fontawesome website [Fontawesome](https://fontawesome.com/
 
 ![website](documentation/readme-images/game.JPG)
 
-
 ### Heading of the Game
 
 ![title](documentation/readme-images/titleofthegame.JPG)
@@ -146,7 +150,6 @@ Without being overbearing with information, this will help new players quickly g
 
 ![resetbutton](documentation/readme-images/resetbutton.JPG)  ![restbutton-hover](documentation/readme-images/resetbutton-hover.JPG)
  
-
 It is simple for the user to reset the entire game area with a single button press thanks to the button's multiple built-in functions:
 
 - The alphabet images are replaced with fresh, randomly arranged ones when the board is reset.
@@ -215,10 +218,60 @@ A variety of difficulty settings would be included in the finished game.
 
 Alternative might be used like colors or numbers in place of alphabets.
 
+# Languages 
 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) (Hypertext Markup Language) or HTML, was used to design the basic website index.html.
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+(Cascading Style Sheets) or CSS, was used to style the website and improve its user interface in style.css.
+- [JS](https://en.wikipedia.org/wiki/JavaScript) (JavaScript) or JS was used as scripting language for Web page in script.js.
+- [MD](https://en.wikipedia.org/wiki/Markdown) (MarkDown) or MD was used to documentation of README.md
 
+# Technologies 
 
+- [GitPod](https://www.gitpod.io/docs/introduction), cloud based IDE.
+- [Github](https://github.com/), for documentation and deployment.
+- [Balsamiq](https://balsamiq.com/), for creating wireframes.
+- [Google Fonts](https://fonts.google.com/), for text styling.
+- [Google](https://www.google.com/), search tool.
+- Chrome developer tools.
+- [Convert-to-webp](https://image.online-convert.com/convert-to-webp) was used to convert images to webp format.
+- [Fontawesome](https://fontawesome.com) was used for the social media icons
+- [Favicon](https://favicon.io/) was used to resize title icon for all devices.
+- [Am I Responsive](https://ui.dev/amiresponsive) was used to get a responsive image for README.
 
+# Testing
+
+## Validation
+
+### HTML Validator
+
+[HTML Validator](https://validator.w3.org/) was run at several points during the project and small syntax errors identified were fixed. At the final stage no errors were found. 
+
+Results and Full Validation results are here
+
+![index.html](documentation/validation-results/index.html-validation.JPG) 
+
+<a href="https://github.com/SwathiKeshavamurthy/Clicky-Alphabets-P1/blob/main/documentation/validation-results/index.html-Showing%20results%20for%20contents%20of%20text-input%20area%20-%20Nu%20Html%20Checker.pdf" target="_blank"> CLICK HERE </a>
+
+ ### CSS Validator
+
+ [CSS Validator](https://validator.w3.org/) was run several times during the project and small syntax errors like brackets closure which were corrected. At the time of submission the CSS code successfully passed the validator with no errors.
+
+Results and Full Validation results are here
+
+![stylesheet.css](documentation/validation-results/style.css-validation.JPG)
+
+<a href="https://github.com/SwathiKeshavamurthy/Clicky-Alphabets-P1/blob/main/documentation/validation-results/style.css-W3C%20CSS%20Validator%20results%20for%20TextArea%20(CSS%20level%203%20%2B%20SVG).pdf" target="_blank"> CLICK HERE </a>
+
+### JavaScript Validator
+
+[JSHint](https://jshint.com/) was run during the project and all the errors were resolved. With one warning and one unused variable.
+
+Results and Full Validation results are here
+
+![script.js](documentation/validation-results/js-validation.JPG)
+
+<a href="https://github.com/SwathiKeshavamurthy/Clicky-Alphabets-P1/blob/main/documentation/validation-results/style.css-W3C%20CSS%20Validator%20results%20for%20TextArea%20(CSS%20level%203%20%2B%20SVG).pdf" target="_blank"> CLICK HERE </a>
 
 
 
