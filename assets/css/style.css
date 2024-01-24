@@ -12,7 +12,7 @@ body {
     text-align: center;
     font-family: "Kalam", "Lato";
     top:10px;
-    background-image: url('/assets/images/hero1.webp');
+    background: url('/assets/images/hero1.webp') no-repeat, center;
     
 }
 
@@ -59,6 +59,7 @@ img {
     font-size: x-large;
     font-family: "Kalam", "Lato";
     justify-content: space-evenly;
+    font-weight: 600;
   }
   
   .correct {
