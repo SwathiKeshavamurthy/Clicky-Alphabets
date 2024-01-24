@@ -4,7 +4,7 @@
 
 view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky-Alphabets-P1/)
 
-![Am I Responsive Image](assets/documentation/readme-images/amiresponsive.JPG)
+![Am I Responsive Image](documentation/readme-images/amiresponsive.JPG)
 
 # Introduction
 
@@ -33,12 +33,14 @@ view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky
   - [Existing Features](#existing-features)
     - [Heading of the Game](#heading-of-the-game)
     - [Game description](#game-description)
-    - [Start Game]()
-    - [Reset Game]()
-    - [Cursor]()
-    - [Alphabets]()
-    - [Timer]()
-    - [Best Time]()  
+    - [Start Game](#start-game)
+    - [Reset Game](#reset-game)
+    - [Alphabets](#alphabets)
+      - [Correct Click](#correct-click)
+      - [Incorrect click](#incorrect-click)
+    - [Timer](#timer)
+    - [Your Best Time](#your-best-time)  
+    - [Footer](#footer)
   - [Future Features](#future-features)
 
 # User Goals and Stories (UX)
@@ -92,7 +94,7 @@ To help users the website and game has been designed userfriendly.
 
 Here are the first wireframes from the design stage. Every design element was put into practice with the help of [Balsamiq Wireframes](https://balsamiq.com/wireframes/)
 
-![laptop-index](assets/documentation/wireframes/window-wireframe.JPG) ![tab-index](assets/documentation/wireframes/tablet-wireframe.JPG) ![smartphone-index](assets/documentation/wireframes/smartphone-wireframes.JPG)
+![laptop-index](documentation/wireframes/window-wireframe.JPG) ![tab-index](documentation/wireframes/tablet-wireframe.JPG) ![smartphone-index](documentation/wireframes/smartphone-wireframes.JPG)
 
 ## Fonts
 
@@ -116,22 +118,113 @@ Icons were taken from Fontawesome website [Fontawesome](https://fontawesome.com/
 
 ## Existing Features
 
+![website](documentation/readme-images/game.JPG)
+
+
 ### Heading of the Game
 
-![title](assets/documentation/readme-images/titleofthegame.JPG)
+![title](documentation/readme-images/titleofthegame.JPG)
 
 You can tell exactly what the game is about from the page heading.
 
 ### Game Description
 
-![description](assets/documentation/readme-images/description.JPG)
+![description](documentation/readme-images/description.JPG)
 
 A synopsis of how the game is played.
 Without being overbearing with information, this will help new players quickly grasp how the game is played.
 
 ### Start Game
 
-![startbutton](assets/documentation/readme-images/startbutton.JPG)
+![startbutton](documentation/readme-images/startbutton.JPG)  ![startbutton-hover](documentation/readme-images/startbutton-hover.JPG) 
+
+- In order to begin the game, you must press the start game button. All of the Alphabet images will appear and timer will start once you click the Start Game button.
+- This allows the player to launch a game whenever they want.
+- The hover effect on the button is a helpful visual cue.
+
+### Reset Game
+
+![resetbutton](documentation/readme-images/resetbutton.JPG)  ![restbutton-hover](documentation/readme-images/resetbutton-hover.JPG)
+ 
+
+It is simple for the user to reset the entire game area with a single button press thanks to the button's multiple built-in functions:
+
+- The alphabet images are replaced with fresh, randomly arranged ones when the board is reset.
+- The alphabet images that were colored by clicks in the previous game are now reset to their original colors.
+- The timer is reset to 0 seconds.
+- Playing a new game requires pressing reset and start again because it ends the current one.
+- The alphabetical order in which they should be clicked is also reset by it.
+Reset must be pressed after the game is over in order to begin a new one.
+
+This allows the user to take a moment to consider the game they just finished before the game area is reset.
+The hover effect on the reset button provides a useful visual cue for the user.
+
+### Alphabets
+
+All of the Alphabet images will appear and timer will start once Start Game button is clicked.
+![alphabets](documentation/readme-images/alphabets.JPG)
+
+#### Correct Click
+
+- The alphabet is arranged randomly, with a new placement for every game.
+- By doing this, the game stays unpredictable and ensures that each game presents a fresh challenge.
+- The backdrop will turn green when the clicks are made in the right order.
+![correct](documentation/readme-images/correct.JPG)
+
+#### Incorrect Click
+
+- A quick and simple method for the player to verify that they selected the right alphabet.
+- A mistaken click will cause the background to turn red.
+- A simple method for the player to realize that they selected the wrong alphabet.
+![incorrect](documentation/readme-images/incorrect.JPG)
+
+### Timer
+
+- The game will launch the timer.
+- The timer gives the player a competitive element, which increases the user's interest in the game.
+- When the game is over or finished, it stops.
+- Helpful in letting the player know how quickly they finished the current game.
+- Resets upon pressing the reset button.
+- It's simple for the user to reset everything relevant between games with a single button.
+![timer](documentation/readme-images/timer.JPG)  ![timerstart](documentation/readme-images/timerstart.JPG)
+
+### Your Best Time
+
+- The first game finished will be recorded on the screen, giving subsequent attempts a benchmark.
+- The addition of a timer to the player's arsenal should make for an entertaining gameplay feature.
+- When the game is over, the best time feature looks at the timer's value. If you beat your previous record, it will record your new best time on the screen.
+- The user should feel proud of themselves because they beat their own record.
+![besttime](documentation/readme-images/yourbesttime.JPG)  ![newbesttime](documentation/readme-images/yourbesttimestart.JPG)
+
+### Footer
+
+The footer is visible at the bottom of the page so that social media links always available to the user.
+![footer](documentation/readme-images/footer.JPG)
+- Below all these there is a disclaimer for copyright.
+![disclaimer](documentation/readme-images/disclaimer.JPG)
+
+## Future Features
+
+A variety of difficulty settings would be included in the finished game. 
+
+- A timer with intervals of 30, 45 and 60seconds is included in each increasingly difficult level.
+- It would be more difficult to remember which alphabets have already been clicked if the colors were taken off of them when the hardest setting is selected.
+- The absence of visual cues would make it more difficult to locate the alphabets you're looking for.
+- Log In- If you want to save your score, you might need to log in.
+- Sound effects are optional.
+
+Alternative might be used like colors or numbers in place of alphabets.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
