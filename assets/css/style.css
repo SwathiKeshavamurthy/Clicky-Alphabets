@@ -7,13 +7,11 @@
 
 /* General Style for Body */
 body {
-    background-color: rgb(246, 243, 250);
+    background-color: rgb(126, 122, 133);
     color: rgb(8, 8, 8);
     text-align: center;
     font-family: "Kalam", "Lato", "sans serif";
     top:10px;
-    background: url('/assets/images/hero1.webp') no-repeat center;
-    
 }
 
 /* Style for start and reset buttons */
