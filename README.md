@@ -1,6 +1,5 @@
-<h2>Welcome</h2>
-
 # <h1 align="center">ClickyAlphabets</h1>
+<h2>Welcome</h2>
 
 view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky-Alphabets-P1/)
 
@@ -8,7 +7,7 @@ view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky
 
 # Introduction
 
- [ClickyAlphabets website](), engage the users in self-defeating competition and simple entertainment in addition to mental exercise. While you try to beat your personal record, the game is entertaining, simple to learn, and has the potential to become slightly addictive.
+ [ClickyAlphabets website](https://swathikeshavamurthy.github.io/Clicky-Alphabets-P1/), engage the users in self-defeating competition and simple entertainment in addition to mental exercise. While you try to beat your personal record, the game is entertaining, simple to learn, and has the potential to become slightly addictive.
 
 # Table of Contents
 
@@ -42,11 +41,30 @@ view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky
     - [Your Best Time](#your-best-time)  
     - [Footer](#footer)
   - [Future Features](#future-features)
-  - [Deployment](#deployment)
-  - [Languages](#languages)
-  - [Technologies](#technologies)
-  - [Testing](#testing)
-    - [Validation](#validation)
+- [Deployment](#deployment)
+- [Languages](#languages)
+- [Technologies](#technologies)
+- [Testing](#testing)
+  - [Validation](#validation)
+    - [HTML Validator](#html-validator)
+    - [CSS Validator](#css-validator)
+    - [JavaScript Validator](#javascript-validator)
+  - [Lighthouse in Chrome Developer Tools](#lighthouse-in-chrome-developer-tools)
+  - [Responsiveness](#responsiveness)
+  - [Browser Compatibility](#browser-compatibility)
+  - [Manual testing](#manual-testing)
+- [Deployment](#deployment)
+- [Bugs](#bugs)
+  - [Known Bugs](#known-bugs)
+  - [Fixed Bugs](#fixed-bugs)
+  - [Unfixed bugs](#unfixed-bugs)
+- [Credits](#credits)
+  - [Code](#code)
+  - [Media](#media)
+  - [Websites](#websites)
+  - [Others](#others)
+  - [Acknowledgments](#acknowledgments)
+
 
 # User Goals and Stories (UX)
 
@@ -203,7 +221,8 @@ All of the Alphabet images will appear and timer will start once Start Game butt
 
 The footer is visible at the bottom of the page so that social media links always available to the user.
 ![footer](documentation/readme-images/footer.JPG)
-- Below all these there is a disclaimer for copyright.
+
+ Below all these there is a disclaimer for copyright.
 ![disclaimer](documentation/readme-images/disclaimer.JPG)
 
 ## Future Features
@@ -271,15 +290,105 @@ Results and Full Validation results are here
 
 ![script.js](documentation/validation-results/js-validation.JPG)
 
-<a href="https://github.com/SwathiKeshavamurthy/Clicky-Alphabets-P1/blob/main/documentation/validation-results/style.css-W3C%20CSS%20Validator%20results%20for%20TextArea%20(CSS%20level%203%20%2B%20SVG).pdf" target="_blank"> CLICK HERE </a>
+<a href="https://github.com/SwathiKeshavamurthy/Clicky-Alphabets-P1/blob/main/documentation/validation-results/JSHint%2C%20a%20JavaScript%20Code%20Quality%20Tool.pdf" target="_blank"> CLICK HERE </a>
 
+## Lighthouse in Chrome Developer Tools
 
+The following lighthouse report was run on the finished deployed website to check performance.
 
+![lighthouse-report](documentation/validation-results/lighhouse.JPG)
 
+## Responsiveness
 
+The website performed as expected across a wide range of screen sizes when tested on development tools on a variety of devices, including a Samsung S9, Nexus 10, Nest Hub, iPhone X,Samsung Galaxy Fold, Iphone 12 Pro and tablets etc..
+The design process made use of the Chrome development tools to verify breakpoints and responsiveness. Accordingly adjustments were made.
 
+## Browser Compatibility
 
+Browser tests on Chrome, Firefox, and Microsoft Edge revealed no issues with the website.
 
+## Manual Examination
 
+On a computer, tablet, Samsung A53, and iPhone 13, manual testing was done.
+Microsoft Edge, Safari, Firefox, and Chrome were the browsers used for testing.
 
+### Start Game button
+- Color transition when mouse is hovered over.
+- When clicked, shows all alphabets and initiates a timer.
+
+### Reset Game button.
+- Color transition when mouse is hovered over.
+- Sort alphabets by random display.
+- Sets the timer back to zero.
+- When clicked, all alphabets' backgrounds are changed to normal.
+
+### Alphabets
+- The background turns green when the alphabets are clicked correctly.
+- The background turns red when alphabets are clicked incorrectly.
+
+### Timer
+ - The timer begins when the game launches. 
+- The timer ends when the game is finished, when the reset button is pressed, or both.
+
+### Your best time
+ - The time that you spend finishing the first game will be shown as Your best time. 
+- Your best time will accurately appear if you beat your previous time.
+
+All the above tests were tested manually on all screens. All the images are attached above for the reference.
+
+# Deployment
+
+I followed these steps to deploy the website to GitHub Pages:
+
+1. From the project's [Github](https://github.com/SwathiKeshavamurthy/Clicky-Alphabets-P1) repository.
+2. From the top navigation menu, select the settings icon.
+3. Select Pages from the menu on the left.
+4. Select "deploy from branch."
+5. Choose "/(root)" and "main."
+6. Select "Save."
+
+The project is now available from the project repository following the completion of the build.
+There is a tab labeled Deployments on the right side; select it to see a link to the deployed website under Active Deployments.
+
+This is the URL of my live website: [Clicky Alphabets](Clicky-Alphabets-P1/https://swathikeshavamurthy.github.io)
+
+# Bugs
+
+## Known Bugs
+
+### Bug1
+
+- When running my code through jshint, I got a warning saying: 
+
+'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+
+'for of' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+
+'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+
+### Bug2
+
+- When running my code through jshint, I got a warning saying: 
+
+One warning
+
+66	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (handleImageClick)
+
+### Bug3
+
+- When running my code through jshint, I got a warning saying:
+
+One unused variable
+
+14	startGame
+
+### Bug4
+
+- During manual testing, the timer was running fast and the timer was was always set to 1 even after Reset Game.
+
+## Fixed Bugs
+
+### Bug1
+
+After researching on Google 
 

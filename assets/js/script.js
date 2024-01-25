@@ -1,3 +1,4 @@
+/* eslint-env es6 */
 /* jshint esversion: 6 */
 
 const imageContainer = document.getElementById('imageContainer'); // Stores all 26 images
