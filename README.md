@@ -61,7 +61,6 @@ view the live project [CLICK HERE!](https://swathikeshavamurthy.github.io/Clicky
 - [Credits](#credits)
   - [Code](#code)
   - [Media](#media)
-  - [Websites](#websites)
   - [Others](#others)
   - [Acknowledgments](#acknowledgments)
 
@@ -390,5 +389,60 @@ One unused variable
 
 ### Bug1
 
-After researching on Google 
+After researching on Google added these two comments at the start of script.js
+/* eslint-env es6 */
+/* jshint esversion: 6 */
 
+Now this bug has been fixed.
+
+### Bug4
+
+Made changes in the function resetGame() code.
+
+Now this bug has been fixed.
+
+## Unfixed Bugs
+
+### Bug2
+
+- When running my code through jshint, I got a warning saying: 
+
+One warning
+
+66	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (handleImageClick)
+
+I tried to add fix it with another function but it led to other errors and it didn't work as expected. So, I left as it is, as it is not affecting the total functionally of the game.
+
+### Bug3
+
+- When running my code through jshint, I got a warning saying:
+
+One unused variable
+
+14	startGame
+
+I tried to add if and else conditional statements instead of function(), but it didn't work as expected and led to others errors. So, I left as it is, as it is not affecting the total functionally of the game.
+
+# Credits
+
+## Code
+
+- Code for [ParseInt](https://stackoverflow.com/questions/4659492/using-javascripts-parseint-at-end-of-string)
+- Code for [Alphabet Generation](https://forum.freecodecamp.org/t/alphabet-generation-in-js-are-there-any-constants/532843)
+- Code for [Create an array of Characters](https://stackoverflow.com/questions/12376870/create-an-array-of-characters-from-specified-range)
+- Code for [Shuffle Algorithm (Fisher Yates Algorithm)](https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/)
+
+## Media
+
+Images downloaded from [Pinterest](https://in.pinterest.com/)
+Special thanks to [Haamim Ali](https://in.pinterest.com/haamimali/english-alphabet/)
+
+## Others
+
+- This project is inspried by [ClickTheNumber](https://projects.marcnitzsche.de/ClickTheNumber/)
+- The project [Love Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) 
+
+## Acknowledgments
+
+- I am grateful to my Code Institute mentor Jack Wachira for instructing for Timer function and for his insightful counsel and constructive criticism regarding the project's planning and implementation. 
+- Thanks to Kristyna, Cohort facilitator at Code Institute how gave infromation about README references and depth of the project timelines.
